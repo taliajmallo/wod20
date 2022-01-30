@@ -4,11 +4,9 @@
 [![MIT License]][MIT URL]
 [![GitHub Super-Linter]][Super-Linter URL]
 
-This system is for playing Exalted versus World of Darkness in the Foundry Virtual Tabletop system. It has been forked from the V20 system, and will retain functionality and assets from that system as a result.
+This system is for playing Exalted versus World of Darkness in the Foundry Virtual Tabletop system. It has been forked from the [V20 system], and will retain functionality and assets from that system as a result.
 
 Licensed materials will NOT be provided as this is a system provided for public use for free.
-
-.
 
 ## Feedback
 
