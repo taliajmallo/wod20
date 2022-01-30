@@ -9,7 +9,12 @@
   "VTM5E.Ghoul": "Ghoul",
   "VTM5E.Mortal": "Mortal",
   "VTM5E.Domitor": "Domitor",
-  
+
+  "VTM5E.Exalt": "Exalt",
+  "EVWOD.Exalt": "Exalt",
+  "EVWOD.Type": "Type",
+  "EVWOD.Caste": "Caste",
+
   "WOD20.Darkages": "Dark Ages",
 
 
@@ -23,12 +28,17 @@
   "VTM5E.Rouse": "Rouse",
   "VTM5E.Frenzy": "Frenzy",
   "VTM5E.Roll": "Roll",
-  "VTM5E.Null" : "Null", 
+  "VTM5E.Null" : "Null",
   "VTM5E.Superficial": "Superficial",
   "VTM5E.Aggravated": "Aggravated",
   "VTM5E.Value": "Value",
   "VTM5E.Stains": "Stains",
   "VTM5E.Max": "Max",
+
+
+  "EVWOD.Essence": "Essence",
+  "EVWOD.EssenceRating": "Essence Rating",
+  "EVWOD.Limit": "Limit",
 
   "VTM5E.Stats": "Stats",
   "VTM5E.Disciplines": "Disciplines",

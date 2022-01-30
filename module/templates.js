@@ -8,26 +8,29 @@ export const preloadHandlebarsTemplates = async function () {
   // Define template paths to load
   const templatePaths = [
     // Actor Sheet Partials
-    "systems/wod20/templates/actor/parts/biography.html",
-    "systems/wod20/templates/actor/parts/disciplines.html",
-    "systems/wod20/templates/actor/parts/exp.html",
-    "systems/wod20/templates/actor/parts/features.html",
-    "systems/wod20/templates/actor/parts/frenzy.html",
-    "systems/wod20/templates/actor/parts/health.html",
-    "systems/wod20/templates/actor/parts/humanity.html",
-    "systems/wod20/templates/actor/parts/bloodpool.html",
-    "systems/wod20/templates/actor/parts/profile-img.html",
-    "systems/wod20/templates/actor/parts/other.html",
-    "systems/wod20/templates/actor/parts/rotschreck.html",
-    "systems/wod20/templates/actor/parts/stats.html",
-    "systems/wod20/templates/actor/parts/willpower.html",
-    "systems/wod20/templates/actor/parts/combat.html",
+    "systems/evwod/templates/actor/parts/biography.html",
+    "systems/evwod/templates/actor/parts/disciplines.html",
+    "systems/evwod/templates/actor/parts/exp.html",
+    "systems/evwod/templates/actor/parts/features.html",
+    "systems/evwod/templates/actor/parts/frenzy.html",
+    "systems/evwod/templates/actor/parts/health.html",
+    "systems/evwod/templates/actor/parts/humanity.html",
+    "systems/evwod/templates/actor/parts/bloodpool.html",
+    "systems/evwod/templates/actor/parts/essence.html",
+    "systems/evwod/templates/actor/parts/limit.html",
+    "systems/evwod/templates/actor/parts/profile-img.html",
+    "systems/evwod/templates/actor/parts/other.html",
+    "systems/evwod/templates/actor/parts/rotschreck.html",
+    "systems/evwod/templates/actor/parts/stats.html",
+    "systems/evwod/templates/actor/parts/exaltStats.html",
+    "systems/evwod/templates/actor/parts/willpower.html",
+    "systems/evwod/templates/actor/parts/combat.html",
 
     // Item Sheet Partials
-    "systems/wod20/templates/item/parts/skills.html",
-    "systems/wod20/templates/item/parts/disciplines.html",
-    "systems/wod20/templates/item/parts/attributes.html",
-    "systems/wod20/templates/item/parts/virtues.html",
+    "systems/evwod/templates/item/parts/skills.html",
+    "systems/evwod/templates/item/parts/disciplines.html",
+    "systems/evwod/templates/item/parts/attributes.html",
+    "systems/evwod/templates/item/parts/virtues.html",
   ];
 
   /* Load the template parts

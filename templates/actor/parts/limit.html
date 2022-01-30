@@ -1,0 +1,12 @@
+<div class="resource flex-group-center limit">
+   <div class="flexrow">
+       <label for="data.data.limit" class="resource-label">{{localize "EVWOD.Limit"}}</label>
+   </div>
+   <div class="resource-content flexrow flex-center flex-between">
+       <div class="resource-counter" data-states="x:full" data-max="{{data.data.limit.max}}" data-full="{{data.data.limit.full}}" data-name="data.limit">
+           {{#numLoop data.data.limit.max}}
+           <span class="resource-counter-step" data-index="{{this}}" data-state=""></span>
+           {{/numLoop}}
+       </div>
+   </div>
+</div>

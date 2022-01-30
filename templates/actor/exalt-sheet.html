@@ -1,8 +1,8 @@
 <form
-  class="{{cssClass}} flexcol {{#if locked}}locked{{/if}} mortal-sheet"
+  class="{{cssClass}} flexcol {{#if locked}}locked{{/if}} exalt-sheet"
   autocomplete="off"
 >
-  {{!-- Mortal Sheet Header --}}
+{{!-- Exalt Sheet Header --}}
   <header class="sheet-header">
     {{> "systems/evwod/templates/actor/parts/profile-img.html"}}
     <div class="header-fields">
@@ -15,9 +15,22 @@
             placeholder="{{localize 'VTM5E.Name'}}"
           />
         </h1>
-        <div class="resource flex-group-center exp">
-          {{> "systems/evwod/templates/actor/parts/exp.html"}}
-        </div>
+        <h1 class="charname">
+         <input
+           name="data.headers.exalttype"
+           type="text"
+           value="{{data.data.headers.exalttype}}"
+           placeholder="{{localize 'EVWOD.Type'}}"
+         />
+       </h1>
+       <h1 class="charname">
+         <input
+           name="data.headers.caste"
+           type="text"
+           value="{{data.data.headers.caste}}"
+           placeholder="{{localize 'EVWOD.Caste'}}"
+         />
+       </h1>
       </div>
       {{!-- The grid classes are defined in scss/global/_grid.scss. To use, use
       both the "grid" and "grid-Ncol" class where "N" can be any number from 1
@@ -28,7 +41,14 @@
         child elements content and text. --}} {{>
         "systems/evwod/templates/actor/parts/health.html"}} {{>
         "systems/evwod/templates/actor/parts/willpower.html"}} {{>
-        "systems/evwod/templates/actor/parts/humanity.html"}}
+        "systems/evwod/templates/actor/parts/essence.html"}}
+      </div>
+      {{!-- The grid classes are defined in scss/global/_grid.scss. To use, use
+      both the "grid" and "grid-Ncol" class where "N" can be any number from 1
+      to 12 and will create that number of columns. --}}
+      <div class="resources grid grid-2col">
+        {{> "systems/evwod/templates/actor/parts/exp.html"}} {{>
+        "systems/evwod/templates/actor/parts/limit.html"}}
       </div>
     </div>
   </header>
@@ -45,11 +65,11 @@
   {{!-- Mortal Sheet Body --}}
   <section class="sheet-body">
     {{!-- Stats Tab --}} {{>
-    "systems/evwod/templates/actor/parts/stats.html"}} {{!-- Owned
+    "systems/evwod/templates/actor/parts/exaltStats.html"}} {{!-- Owned
     Features Tab --}} {{>
     "systems/evwod/templates/actor/parts/features.html"}} {{!-- Biography
     Tab --}} {{> "systems/evwod/templates/actor/parts/biography.html"}}
-    {{! -- Combat --}} 
+    {{! -- Combat --}}
     {{> "systems/evwod/templates/actor/parts/combat.html"}}
     {{!-- Other Tab --}} {{>
     "systems/evwod/templates/actor/parts/other.html"}}

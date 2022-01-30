@@ -8,12 +8,12 @@ import { rollDice } from "./roll-dice.js";
  * @extends {MortalActorSheet}
  */
 
-export class GhoulActorSheet extends MortalActorSheet {
+export class ExaltActorSheet extends MortalActorSheet {
   /** @override */
   static get defaultOptions() {
     return mergeObject(super.defaultOptions, {
-      classes: ["vtm5e", "sheet", "actor", "ghoul"],
-      template: "systems/evwod/templates/actor/ghoul-sheet.html",
+      classes: ["vtm5e", "sheet", "actor", "exalt"],
+      template: "systems/evwod/templates/actor/exalt-sheet.html",
       width: 800,
       height: 700,
       tabs: [
@@ -30,7 +30,7 @@ export class GhoulActorSheet extends MortalActorSheet {
   get template() {
     if (!game.user.isGM && this.actor.limited)
       return "systems/evwod/templates/actor/limited-sheet.html";
-    return "systems/evwod/templates/actor/ghoul-sheet.html";
+    return "systems/evwod/templates/actor/exalt-sheet.html";
   }
 
   /* -------------------------------------------- */
@@ -39,10 +39,10 @@ export class GhoulActorSheet extends MortalActorSheet {
   getData() {
     const data = super.getData();
 
-    data.sheetType = `${game.i18n.localize("VTM5E.Ghoul")}`;
+    data.sheetType = `${game.i18n.localize("VTM5E.Exalt")}`;
 
     // Prepare items.
-    if (this.actor.data.type === "ghoul") {
+    if (this.actor.data.type === "exalt") {
       this._prepareItems(data);
     }
 
@@ -50,7 +50,7 @@ export class GhoulActorSheet extends MortalActorSheet {
   }
 
   /**
-   * Organize and classify Disciplines for Vampire & Ghoul sheets.
+   * Organize and classify Disciplines for Vampire & Exalt sheets.
    *
    * @param {Object} actorData The actor to prepare.
    * @return {undefined}
@@ -136,7 +136,7 @@ export class GhoulActorSheet extends MortalActorSheet {
       });
     });
 
-    // Rollable Vampire/Ghouls powers
+    // Rollable Vampire/Exalts powers
     html.find(".power-rollable").click(this._onVampireRoll.bind(this));
   }
 

@@ -6,8 +6,6 @@
 
 This system is for playing Exalted versus World of Darkness in the Foundry Virtual Tabletop system. It has been forked from the V20 system, and will retain functionality and assets from that system as a result.
 
-***NOTE: No actual functionality additions/changes have been made yet. This note will be removed when some have been.***
-
 Licensed materials will NOT be provided as this is a system provided for public use for free.
 
 .
@@ -21,9 +19,9 @@ Bugs reported as issues to this repo are greatly appreciate.
 
 Huge thanks to these folks for their contributions:
 
-* This system was forked from the [V20 system] for Foundry by [Layman2501]
+* This system was forked from the [V20 system] for Foundry by [Layman2501], and would not exist without their efforts.
 * The below are copied from the [V20 system]'s credits:
-  * This system is modified version of Rayji96 [foundry-V5] for Foundary 
+  * This system is modified version of Rayji96 [foundry-V5] for Foundary
   * This sheet was initially based on the [boilerplate system] by @asacolips#1867
   * French localization started by @Lloyxide#6914
   * Help with french localization by [Lemantia]

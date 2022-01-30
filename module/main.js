@@ -13,6 +13,7 @@ import { MortalActorSheet } from "./actor/mortal-actor-sheet.js";
 import { GhoulActorSheet } from "./actor/ghoul-actor-sheet.js";
 import { VampireActorSheet } from "./actor/vampire-actor-sheet.js";
 import { VampireDarkAgesSheet } from "./actor/vampire-da-actor-sheet.js";
+import { ExaltActorSheet } from "./actor/exalt-actor-sheet.js";
 
 Hooks.once("init", async function () {
   console.log("Initializing Schrecknet...");
@@ -69,6 +70,11 @@ Hooks.once("init", async function () {
     types: ["mortal"],
     makeDefault: true,
   });
+  Actors.registerSheet("vtm5e", ExaltActorSheet, {
+   label: "Exalt Sheet",
+   types: ["exalt"],
+   makeDefault: true,
+ });
   Actors.registerSheet("vtm5e", CoterieActorSheet, {
     label: "Coterie Sheet",
     types: ["coterie"],
@@ -237,16 +243,16 @@ Hooks.once("diceSoNiceReady", (dice3d) => {
   dice3d.addDicePreset({
     type: "dv",
     labels: [
-      "systems/wod20/assets/images/normal-fail-dsn.png",
-      "systems/wod20/assets/images/normal-fail-dsn.png",
-      "systems/wod20/assets/images/normal-fail-dsn.png",
-      "systems/wod20/assets/images/normal-fail-dsn.png",
-      "systems/wod20/assets/images/normal-fail-dsn.png",
-      "systems/wod20/assets/images/normal-success-dsn.png",
-      "systems/wod20/assets/images/normal-success-dsn.png",
-      "systems/wod20/assets/images/normal-success-dsn.png",
-      "systems/wod20/assets/images/normal-success-dsn.png",
-      "systems/wod20/assets/images/normal-crit-dsn.png",
+      "systems/evwod/assets/images/normal-fail-dsn.png",
+      "systems/evwod/assets/images/normal-fail-dsn.png",
+      "systems/evwod/assets/images/normal-fail-dsn.png",
+      "systems/evwod/assets/images/normal-fail-dsn.png",
+      "systems/evwod/assets/images/normal-fail-dsn.png",
+      "systems/evwod/assets/images/normal-success-dsn.png",
+      "systems/evwod/assets/images/normal-success-dsn.png",
+      "systems/evwod/assets/images/normal-success-dsn.png",
+      "systems/evwod/assets/images/normal-success-dsn.png",
+      "systems/evwod/assets/images/normal-crit-dsn.png",
     ],
     colorset: "black",
     fontScale: 0.5,
@@ -273,16 +279,16 @@ Hooks.once("diceSoNiceReady", (dice3d) => {
   dice3d.addDicePreset({
     type: "dh",
     labels: [
-      "systems/wod20/assets/images/bestial-fail-dsn.png",
-      "systems/wod20/assets/images/red-fail-dsn.png",
-      "systems/wod20/assets/images/red-fail-dsn.png",
-      "systems/wod20/assets/images/red-fail-dsn.png",
-      "systems/wod20/assets/images/red-fail-dsn.png",
-      "systems/wod20/assets/images/red-success-dsn.png",
-      "systems/wod20/assets/images/red-success-dsn.png",
-      "systems/wod20/assets/images/red-success-dsn.png",
-      "systems/wod20/assets/images/red-success-dsn.png",
-      "systems/wod20/assets/images/red-crit-dsn.png",
+      "systems/evwod/assets/images/bestial-fail-dsn.png",
+      "systems/evwod/assets/images/red-fail-dsn.png",
+      "systems/evwod/assets/images/red-fail-dsn.png",
+      "systems/evwod/assets/images/red-fail-dsn.png",
+      "systems/evwod/assets/images/red-fail-dsn.png",
+      "systems/evwod/assets/images/red-success-dsn.png",
+      "systems/evwod/assets/images/red-success-dsn.png",
+      "systems/evwod/assets/images/red-success-dsn.png",
+      "systems/evwod/assets/images/red-success-dsn.png",
+      "systems/evwod/assets/images/red-crit-dsn.png",
     ],
     colorset: "hunger",
     system: "vtm5e",

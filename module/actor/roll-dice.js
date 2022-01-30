@@ -116,7 +116,7 @@ export async  function rollDice(
   roll.terms[0].results.forEach((dice) => {
     label =
       label +
-      `<img src="systems/wod20/assets/images/diceimg_${dice.result}.png" alt="Normal Fail" class="roll-img normal-dice" />`;
+      `<img src="systems/evwod/assets/images/diceimg_${dice.result}.png" alt="Normal Fail" class="roll-img normal-dice" />`;
   });
 
   label = label + "<br>";

@@ -28,16 +28,16 @@ export class VampireHungerDie extends Die {
   /** @override */
   static getResultLabel(result) {
     return {
-      1: '<img src="systems/wod20/assets/images/bestial-fail.png" />',
-      2: '<img src="systems/wod20/assets/images/red-fail.png" />',
-      3: '<img src="systems/wod20/assets/images/red-fail.png" />',
-      4: '<img src="systems/wod20/assets/images/red-fail.png" />',
-      5: '<img src="systems/wod20/assets/images/diceimg_5.png" />',
-      6: '<img src="systems/wod20/assets/images/red-success.png" />',
-      7: '<img src="systems/wod20/assets/images/red-success.png" />',
-      8: '<img src="systems/wod20/assets/images/red-success.png" />',
-      9: '<img src="systems/wod20/assets/images/red-success.png" />',
-      10: '<img src="systems/wod20/assets/images/red-crit.png" />',
+      1: '<img src="systems/evwod/assets/images/bestial-fail.png" />',
+      2: '<img src="systems/evwod/assets/images/red-fail.png" />',
+      3: '<img src="systems/evwod/assets/images/red-fail.png" />',
+      4: '<img src="systems/evwod/assets/images/red-fail.png" />',
+      5: '<img src="systems/evwod/assets/images/diceimg_5.png" />',
+      6: '<img src="systems/evwod/assets/images/red-success.png" />',
+      7: '<img src="systems/evwod/assets/images/red-success.png" />',
+      8: '<img src="systems/evwod/assets/images/red-success.png" />',
+      9: '<img src="systems/evwod/assets/images/red-success.png" />',
+      10: '<img src="systems/evwod/assets/images/red-crit.png" />',
     }[result];
   }
 }
