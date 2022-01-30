@@ -23,7 +23,7 @@
   "primaryTokenAttribute": "",
   "secondaryTokenAttribute": "",
   "url": "https://github.com/taliajmallo/wod20",
-  "manifest": "TODO",
-  "download": "TODO",
+  "manifest": "https://raw.githubusercontent.com/taliajmallo/evwod/main/system.json",
+  "download": "https://github.com/taliajmallo/evwod/archive/refs/heads/main.zip",
   "license": "LICENSE.txt"
 }
