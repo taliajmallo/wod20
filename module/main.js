@@ -14,6 +14,7 @@ import { GhoulActorSheet } from "./actor/ghoul-actor-sheet.js";
 import { VampireActorSheet } from "./actor/vampire-actor-sheet.js";
 import { VampireDarkAgesSheet } from "./actor/vampire-da-actor-sheet.js";
 import { ExaltActorSheet } from "./actor/exalt-actor-sheet.js";
+import { ExaltDarkAgesActorSheet } from "./actor/exalt-da-actor-sheet.js";
 
 Hooks.once("init", async function () {
   console.log("Initializing Schrecknet...");
@@ -72,9 +73,14 @@ Hooks.once("init", async function () {
   });
   Actors.registerSheet("vtm5e", ExaltActorSheet, {
    label: "Exalt Sheet",
-   types: ["exalt"],
+   types: ["exalt", "character"],
    makeDefault: true,
  });
+ Actors.registerSheet("vtm5e", ExaltDarkAgesActorSheet, {
+  label: "Exalt Dark Ages Sheet",
+  types: ["exalt-da", "character"],
+  makeDefault: true,
+});
   Actors.registerSheet("vtm5e", CoterieActorSheet, {
     label: "Coterie Sheet",
     types: ["coterie"],
