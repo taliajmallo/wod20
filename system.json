@@ -9,8 +9,6 @@
   "author": "Talia, Majid, Mal, Ray Ji",
   "esmodules": ["module/main.js"],
   "styles": ["css/vtm5e.css"],
-  "scripts": [],
-  "packs": [],
   "languages": [
     {
       "lang": "en",
