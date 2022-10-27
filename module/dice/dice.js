@@ -5,28 +5,26 @@
  * @extends {Die}
  */
 export class VampireDie extends Die {
-  constructor(termData) {
-    termData.faces = 10;
-    super(termData);
+  constructor (termData) {
+    termData.faces = 10
+    super(termData)
   }
-
-
 }
 
 /**
  * Extend the basic Die to show custom vampire icons on a d10.
  */
 export class VampireHungerDie extends Die {
-  constructor(termData) {
-    termData.faces = 10;
-    super(termData);
+  constructor (termData) {
+    termData.faces = 10
+    super(termData)
   }
 
   /** @override */
-  static DENOMINATION = "h";
+  static DENOMINATION = 'h'
 
   /** @override */
-  static getResultLabel(result) {
+  static getResultLabel (result) {
     return {
       1: '<img src="systems/evwod/assets/images/bestial-fail.png" />',
       2: '<img src="systems/evwod/assets/images/red-fail.png" />',

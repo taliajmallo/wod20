@@ -288,12 +288,12 @@
           "aggravated": 0,
           "superficial": 0,
           "lethal" : 0,
-          "max": 5
+          "max": 7
         },
 
         "bloodpool": {
           "full": 0,
-          "max": 5
+          "max": 10
         },
         "willpower": {
           "aggravated": 0,
@@ -337,6 +337,7 @@
         "abilities": {
           "strength": {
             "value": 1,
+            "buff": 0,
             "name": "VTM5E.Strength"
           },
           "charisma": {
@@ -349,6 +350,7 @@
           },
           "dexterity": {
             "value": 1,
+            "buff": 0,
             "name": "VTM5E.Dexterity"
           },
           "manipulation": {
@@ -361,6 +363,7 @@
           },
           "stamina": {
             "value": 1,
+            "buff": 0,
             "name": "VTM5E.Stamina"
           },
           "Appearance": {
@@ -646,12 +649,12 @@
           "aggravated": 0,
           "superficial": 0,
           "lethal" : 0,
-          "max": 5
+          "max": 7
         },
 
         "bloodpool": {
           "full": 0,
-          "max": 5
+          "max": 10
         },
         "willpower": {
           "aggravated": 0,
@@ -695,6 +698,7 @@
         "abilities": {
           "strength": {
             "value": 1,
+            "buff": 0,
             "name": "VTM5E.Strength"
           },
           "charisma": {
@@ -707,6 +711,7 @@
           },
           "dexterity": {
             "value": 1,
+            "buff": 0,
             "name": "VTM5E.Dexterity"
           },
           "manipulation": {
@@ -719,6 +724,7 @@
           },
           "stamina": {
             "value": 1,
+            "buff": 0,
             "name": "VTM5E.Stamina"
           },
           "Appearance": {
@@ -801,6 +807,133 @@
           "courage": {
             "value": 1,
             "name": "VTM5E.Courage"
+          }
+        },
+        "skills": {
+          "alertness": {
+            "value": 0,
+            "name": "VTM5E.Alertness"
+          },
+          "animal ken": {
+            "value": 0,
+            "name": "VTM5E.AnimalKen"
+          },
+          
+           "academics": {
+            "value": 0,
+            "name": "VTM5E.Academics"
+          },
+          "athletics": {
+            "value": 0,
+            "name": "VTM5E.Athletics"
+          },
+          "craft": {
+            "value": 0,
+            "name": "VTM5E.Craft"
+          },
+
+          "computer": {
+            "value": 0,
+            "name": "VTM5E.Computer"
+          },
+
+          "awareness": {
+            "value": 0,
+            "name": "VTM5E.Awareness"
+          },
+          "drive": {
+            "value": 0,
+            "name": "VTM5E.Drive"
+          },
+          "finance": {
+            "value": 0,
+            "name": "VTM5E.Finance"
+          },
+          "brawl": {
+            "value": 0,
+            "name": "VTM5E.Brawl"
+          },
+         
+          "etiquette": {
+            "value": 0,
+            "name": "VTM5E.Etiquette"
+          },
+          "investigation": {
+            "value": 0,
+            "name": "VTM5E.Investigation"
+          },
+          "empathy": {
+            "value": 0,
+            "name": "VTM5E.Empathy"
+          },
+          "firearms": {
+            "value": 0,
+            "name": "VTM5E.Firearms"
+          },
+          "law": {
+            "value": 0,
+            "name": "VTM5E.Law"
+          },
+          "expression": {
+            "value": 0,
+            "name": "VTM5E.Expression"
+          },
+          "larceny": {
+            "value": 0,
+            "name": "VTM5E.Larceny"
+          },
+          "medicine": {
+            "value": 0,
+            "name": "VTM5E.Medicine"
+          },
+          "intimidation": {
+            "value": 0,
+            "name": "VTM5E.Intimidation"
+          },
+          "melee": {
+            "value": 0,
+            "name": "VTM5E.Melee"
+          },
+          "occult": {
+            "value": 0,
+            "name": "VTM5E.Occult"
+          },
+          "leadership": {
+            "value": 0,
+            "name": "VTM5E.Leadership"
+          },
+          "performance": {
+            "value": 0,
+            "name": "VTM5E.Performance"
+          },
+          "politics": {
+            "value": 0,
+            "name": "VTM5E.Politics"
+          },
+          "streetwise": {
+            "value": 0,
+            "name": "VTM5E.Streetwise"
+          },
+          "stealth": {
+            "value": 0,
+            "name": "VTM5E.Stealth"
+          },
+          "Science": {
+            "value": 0,
+            "name": "VTM5E.Science"
+          },
+          "subterfuge": {
+            "value": 0,
+            "name": "VTM5E.Subterfuge"
+          },
+          "survival": {
+            "value": 0,
+            "name": "VTM5E.Survival"
+          },
+      
+          "technology": {
+            "value": 0,
+            "name": "VTM5E.Technology"
           }
         }
       },
@@ -1086,7 +1219,7 @@
     }
   },
   "Item": {
-    "types": ["feature", "power", "specialty", "boon", "customRoll"],
+    "types": ["feature", "power", "specialty", "boon", "customDiscipline", "customRoll"],
     "templates": {
       "vampireBase": {
         "description": ""
@@ -1114,6 +1247,9 @@
     "boon": {
       "templates": ["vampireBase"],
       "boontype": "Trivial"
+    },
+    "customDisciplines": {
+      "templates": ["base"]
     },
     "customRoll": {
       "templates": ["vampireBase"],

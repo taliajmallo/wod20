@@ -1,35 +1,19 @@
-<form
-  class="{{cssClass}} flexcol {{#if locked}}locked{{/if}} vampire-sheet"
-  autocomplete="off"
->
+<form class="{{cssClass}} flexcol {{#if locked}}locked{{/if}} vampire-sheet" autocomplete="off">
   {{!-- Vampire Sheet Header --}}
   <header class="sheet-header">
     {{> "systems/evwod/templates/actor/parts/profile-img.html"}}
     <div class="header-fields">
       <div class="grid grid-3col flexrow">
         <h1 class="charname">
-          <input
-            name="name"
-            type="text"
-            value="{{actor.name}}"
-            placeholder="{{localize 'VTM5E.Name'}}"
-          />
+          <input name="name" type="text" value="{{actor.name}}" placeholder="{{localize 'VTM5E.Name'}}" />
         </h1>
         <h1 class="charname">
-          <input
-            name="data.clan.value"
-            type="text"
-            value="{{data.data.clan.value}}"
-            placeholder="{{localize 'VTM5E.Clan'}}"
-          />
+          <input name="data.clan.value" type="text" value="{{data.data.clan.value}}"
+            placeholder="{{localize 'VTM5E.Clan'}}" />
         </h1>
         <h1 class="charname">
-          <input
-            name="data.headers.nature"
-            type="text"
-            value="{{data.data.headers.nature}}"
-            placeholder="{{localize 'VTM5E.Ambition'}}"
-          />
+          <input name="data.headers.nature" type="text" value="{{data.data.headers.nature}}"
+            placeholder="{{localize 'VTM5E.Ambition'}}" />
         </h1>
       </div>
       {{!-- The grid classes are defined in scss/global/_grid.scss. To use, use
@@ -48,9 +32,14 @@
       both the "grid" and "grid-Ncol" class where "N" can be any number from 1
       to 12 and will create that number of columns. --}}
       <div class="resources grid grid-3col">
-        {{> "systems/evwod/templates/actor/parts/exp.html"}} 
-         {{> "systems/evwod/templates/actor/parts/frenzy.html"}}
-        {{>"systems/evwod/templates/actor/parts/rotschreck.html"}}
+        {{setDividedExp}}
+        {{#unless isDividedExp}}
+        {{> "systems/evwod/templates/actor/parts/exp.html"}}
+        {{else}}
+        {{> "systems/evwod/templates/actor/parts/dividedExp.html"}}
+        {{/unless}}
+        {{> "systems/evwod/templates/actor/parts/frenzy-rot-combined.html"}}
+        {{> "systems/evwod/templates/actor/parts/soak-init-combined.html"}}
       </div>
     </div>
   </header>
