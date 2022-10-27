@@ -147,7 +147,7 @@ function _getRollContentStyle (header, finalValue, roll) {
     label +=
       `<div class="roll-die">
         <img src="icons/svg/d10-grey.svg" alt="none" class="roll-die-background" />
-        <img src="systems/wod20/assets/images/diceimg_${dice.result}.png" alt="Normal Fail" class="roll-img normal-dice" />
+        <img src="systems/evwod/assets/images/diceimg_${dice.result}.png" alt="Normal Fail" class="roll-img normal-dice" />
       </div>`
   })
 

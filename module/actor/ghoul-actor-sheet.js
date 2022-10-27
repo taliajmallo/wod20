@@ -161,7 +161,7 @@ export class GhoulActorSheet extends MortalActorSheet {
     }
     options += `<option value="custom-discipline">${game.i18n.localize('VTM5E.CustomDiscipline')}</option>`
 
-    const template = 'systems/wod20/templates/dialogs/add-discipline.html'
+    const template = 'systems/evwod/templates/dialogs/add-discipline.html'
 
     let buttons = {};
     buttons = {
@@ -199,7 +199,7 @@ export class GhoulActorSheet extends MortalActorSheet {
    */
    _onCreateAndNameDiscipline(event) {
       event.preventDefault();
-      const template = 'systems/wod20/templates/dialogs/name-discipline.html'
+      const template = 'systems/evwod/templates/dialogs/name-discipline.html'
 
       let buttons = {};
       buttons = {

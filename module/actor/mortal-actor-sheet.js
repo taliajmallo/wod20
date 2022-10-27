@@ -143,7 +143,7 @@ export class MortalActorSheet extends CoterieActorSheet {
     const dataset = element.dataset;
     console.log("damage dataset", dataset)
 
-    const template = 'systems/wod20/templates/dialogs/damage-roll.html'
+    const template = 'systems/evwod/templates/dialogs/damage-roll.html'
 
     let buttons = {};
     buttons = {
@@ -235,7 +235,7 @@ export class MortalActorSheet extends CoterieActorSheet {
     const dataset = element.dataset;
     console.log("weapon dataset", dataset)
 
-    const template = 'systems/wod20/templates/dialogs/weapon-roll.html'
+    const template = 'systems/evwod/templates/dialogs/weapon-roll.html'
 
     let buttons = {};
     buttons = {
@@ -318,7 +318,7 @@ export class MortalActorSheet extends CoterieActorSheet {
     const dataset = element.dataset;
     console.log("init dataset", dataset)
 
-    const template = 'systems/wod20/templates/dialogs/init-roll.html'
+    const template = 'systems/evwod/templates/dialogs/init-roll.html'
 
     let buttons = {};
     buttons = {
@@ -369,7 +369,7 @@ export class MortalActorSheet extends CoterieActorSheet {
     const dataset = element.dataset;
     console.log("soak dataset", dataset)
 
-    const template = 'systems/wod20/templates/dialogs/soak-roll.html'
+    const template = 'systems/evwod/templates/dialogs/soak-roll.html'
 
     let buttons = {};
     buttons = {
@@ -451,7 +451,7 @@ export class MortalActorSheet extends CoterieActorSheet {
     const element = event.currentTarget;
     const dataset = element.dataset;
 
-    const template = 'systems/wod20/templates/dialogs/custom-roll.html'
+    const template = 'systems/evwod/templates/dialogs/custom-roll.html'
 
     let buttons = {};
     buttons = {
